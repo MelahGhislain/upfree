@@ -1,7 +1,7 @@
-import { app } from "./app";
+import { app } from "./src/app";
 import dotenv from "dotenv";
-import { connectDb } from "./utils/db";
-import { env } from "./utils/methods";
+import { connectDb } from "./src/utils/db";
+import { env } from "./src/utils/methods";
 
 dotenv.config();
 
