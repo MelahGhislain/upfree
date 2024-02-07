@@ -46,7 +46,7 @@ const registerUser = CatchAsyncError(
             data
         });
       } catch (error) {
-        
+        console.log(error);
       }
 
     } catch (error: any) {
