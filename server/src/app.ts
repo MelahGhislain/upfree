@@ -17,6 +17,9 @@ app.use(cookieParser());
 // Allow specific origins
 app.use(cors({ origin: env('CLIENT_PORT') }));
 
+//set express view engine to ejs. this is for mailing purpose
+app.set('view engine', 'ejs');
+
 // Test api
 app.get('/test', (req: Request, res: Response) => {
   res.status(200).json({
